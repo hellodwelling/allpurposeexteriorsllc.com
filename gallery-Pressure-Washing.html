@@ -1038,7 +1038,7 @@
                     <div class="relative h-16 px-6 bg-white">
                         <h2 class="sr-only" :id="$id('modal-title')">Modal Gallery</h2>
 
-                        <button @click="galleryModalOpen = false;" class="absolute p-1 transition rounded top-5 right-1 hover:bg-gray-100 focus-visible:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2">
+                        <button id="close-modal-button" @click="galleryModalOpen = false; handleClick()" class="absolute p-1 transition rounded top-5 right-1 hover:bg-gray-100 focus-visible:ring-2 focus:outline-none ring-primary ring-opacity-75 ring-offset-2">
                             <span class="sr-only">Close modal</span>
                             <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -1112,6 +1112,14 @@
     </template>
 </div>
 
+<script>
+    function handleClick() {
+        const videos = document.getElementsByClassName('gallery-modal-video')
+        for (let video of videos) {
+            video.muted = true
+        }
+    }
+</script>
         </div>
     </div>
 </section>
@@ -1320,7 +1328,7 @@
                             </li>
                         
                             <li class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75">
-                                Mon:  8:00am - 6:00pm 
+                                Mon:  0:00am - 0:00am 
                             </li>
                         
                             <li class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75">
@@ -1340,7 +1348,7 @@
                             </li>
                         
                             <li class="p-1 text-base text-gray-100 rounded  hover:text-gray-300 focus:ring-2 focus:outline-none ring-white ring-offset-2 ring-opacity-75">
-                                Sat:  0:00am - 0:00am 
+                                Sat:  8:00am - 6:00pm 
                             </li>
                         
                       </ul>
@@ -1501,79 +1509,79 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246962"
-                                                    name="246962"
+                                                    id="contact-service-261826"
+                                                    name="261826"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Home Softwash"
                                             />
-                                            <label for="contact-label-service-246962" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
+                                            <label for="contact-label-service-261826" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246963"
-                                                    name="246963"
+                                                    id="contact-service-261827"
+                                                    name="261827"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Deck & Wood Restoration"
                                             />
-                                            <label for="contact-label-service-246963" class="ml-3 text-sm font-medium text-gray-700">Deck & Wood Restoration</label>
+                                            <label for="contact-label-service-261827" class="ml-3 text-sm font-medium text-gray-700">Deck & Wood Restoration</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246964"
-                                                    name="246964"
+                                                    id="contact-service-261828"
+                                                    name="261828"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Driveway & Sidewalk Cleaning"
                                             />
-                                            <label for="contact-label-service-246964" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
+                                            <label for="contact-label-service-261828" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246965"
-                                                    name="246965"
+                                                    id="contact-service-261829"
+                                                    name="261829"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Deck & Patio Cleaning"
                                             />
-                                            <label for="contact-label-service-246965" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
+                                            <label for="contact-label-service-261829" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246966"
-                                                    name="246966"
+                                                    id="contact-service-261830"
+                                                    name="261830"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fence Washing"
                                             />
-                                            <label for="contact-label-service-246966" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
+                                            <label for="contact-label-service-261830" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246967"
-                                                    name="246967"
+                                                    id="contact-service-261831"
+                                                    name="261831"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Gutter Cleaning"
                                             />
-                                            <label for="contact-label-service-246967" class="ml-3 text-sm font-medium text-gray-700">Gutter Cleaning</label>
+                                            <label for="contact-label-service-261831" class="ml-3 text-sm font-medium text-gray-700">Gutter Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246968"
-                                                    name="246968"
+                                                    id="contact-service-261832"
+                                                    name="261832"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Other Services"
                                             />
-                                            <label for="contact-label-service-246968" class="ml-3 text-sm font-medium text-gray-700">Other Services</label>
+                                            <label for="contact-label-service-261832" class="ml-3 text-sm font-medium text-gray-700">Other Services</label>
                                         </div>
                                         
                                     </div>
@@ -1602,79 +1610,79 @@
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246962"
-                                                    name="246962"
+                                                    id="contact-service-261826"
+                                                    name="261826"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Home Softwash"
                                             />
-                                            <label for="contact-label-service-246962" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
+                                            <label for="contact-label-service-261826" class="ml-3 text-sm font-medium text-gray-700">Home Softwash</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246963"
-                                                    name="246963"
+                                                    id="contact-service-261827"
+                                                    name="261827"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Deck & Wood Restoration"
                                             />
-                                            <label for="contact-label-service-246963" class="ml-3 text-sm font-medium text-gray-700">Deck & Wood Restoration</label>
+                                            <label for="contact-label-service-261827" class="ml-3 text-sm font-medium text-gray-700">Deck & Wood Restoration</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246964"
-                                                    name="246964"
+                                                    id="contact-service-261828"
+                                                    name="261828"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Driveway & Sidewalk Cleaning"
                                             />
-                                            <label for="contact-label-service-246964" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
+                                            <label for="contact-label-service-261828" class="ml-3 text-sm font-medium text-gray-700">Driveway & Sidewalk Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246965"
-                                                    name="246965"
+                                                    id="contact-service-261829"
+                                                    name="261829"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Deck & Patio Cleaning"
                                             />
-                                            <label for="contact-label-service-246965" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
+                                            <label for="contact-label-service-261829" class="ml-3 text-sm font-medium text-gray-700">Deck & Patio Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246966"
-                                                    name="246966"
+                                                    id="contact-service-261830"
+                                                    name="261830"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Fence Washing"
                                             />
-                                            <label for="contact-label-service-246966" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
+                                            <label for="contact-label-service-261830" class="ml-3 text-sm font-medium text-gray-700">Fence Washing</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246967"
-                                                    name="246967"
+                                                    id="contact-service-261831"
+                                                    name="261831"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Gutter Cleaning"
                                             />
-                                            <label for="contact-label-service-246967" class="ml-3 text-sm font-medium text-gray-700">Gutter Cleaning</label>
+                                            <label for="contact-label-service-261831" class="ml-3 text-sm font-medium text-gray-700">Gutter Cleaning</label>
                                         </div>
                                         
                                         <div class="flex items-center">
                                             <input
-                                                    id="contact-service-246968"
-                                                    name="246968"
+                                                    id="contact-service-261832"
+                                                    name="261832"
                                                     type="checkbox"
                                                     class="w-4 h-4 border-gray-300 rounded text-primary focus:ring-primary"
                                                     value="Other Services"
                                             />
-                                            <label for="contact-label-service-246968" class="ml-3 text-sm font-medium text-gray-700">Other Services</label>
+                                            <label for="contact-label-service-261832" class="ml-3 text-sm font-medium text-gray-700">Other Services</label>
                                         </div>
                                         
                                     </div>
